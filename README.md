@@ -11,6 +11,10 @@ The commands are the following:
   ;category : for a specific cat category.
 ```
 
+# Invite the bot
+
+To invite the bot to your discord server, click this [link](https://discord.com/api/oauth2/authorize?client_id=883771045042069524&permissions=120259210240&scope=bot)
+
 # Bot Examples
 
 ![](Images/instructions.png)
@@ -19,5 +23,8 @@ The commands are the following:
 
 ![](Images/cat.png)
 
+# Disclaimer
+
+This bot is made for fun, it is possible that the bot is not always going to be running. Sorry for the inconveniences.
 
 
