@@ -1,5 +1,5 @@
 # Cat-Generator-Bot
-Bot made with the Discord Developer API that generates a Cat when different commands are invoked.
+Bot made with the Discord Developer API and the official Cat API that generates a cat image when different commands are invoked.
 The commands are the following:
 ```bash
   ;i : for the instructions.
