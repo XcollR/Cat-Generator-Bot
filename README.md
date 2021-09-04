@@ -13,11 +13,11 @@ The commands are the following:
 
 # Bot Examples
 
-![](Images/Images/instructions.png)
+![](Images/instructions.png)
 
-![](Images/Images/category.png)
+![](Images/category.png)
 
-![](Images/Images/cat.png)
+![](Images/cat.png)
 
 
 
