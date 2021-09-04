@@ -10,3 +10,14 @@ The commands are the following:
   
   ;category : for a specific cat category.
 ```
+
+# Bot Examples
+
+![](Images/Images/instructions.png)
+
+![](Images/Images/category.png)
+
+![](Images/Images/cat.png)
+
+
+
