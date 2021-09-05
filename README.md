@@ -23,8 +23,14 @@ To invite the bot to your discord server, click this [link](https://discord.com/
 
 ![](Images/cat.png)
 
+# Future Updates
+
+ - Add reactions below the images/gifs to generate new cat images. This will improve the speed and usability of the bot as people will not have write again the command.
+
 # Disclaimer
 
 This bot is made for fun, it is possible that the bot is not always going to be running. Sorry for the inconveniences.
+
+
 
 
