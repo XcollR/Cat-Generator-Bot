@@ -63,3 +63,4 @@ async def get_cat_gif(client, message):
 async def send_reactions(message):
   channel_name = message.channel.name
   print(channel_name)
+  
