@@ -32,4 +32,3 @@ keep_alive()
 client.run(os.environ['TOKEN'])
 
 
-
