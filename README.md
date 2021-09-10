@@ -2,30 +2,52 @@
 Bot made with the Discord Developer API and the official Cat API that generates a cat image when different commands are invoked.
 The commands are the following:
 ```bash
-  ;i : for the instructions.
+  - ;i : for the instructions.
   
-  ;cat : for a cat image.
+  - ;cat : for a cat image.
   
-  ;gif : for a cat gif.
+  - ;gif : for a cat gif.
   
-  ;category : for a specific cat category.
+  - ;category : for a specific cat category.
+  
 ```
 
-# Invite the bot
+```bash
+Below the images, you'll find some reactions:
+  - 🐈: Gives some cat texts :)
+  
+  - 📌: Pins the image to the channel where you are using the bot.
+  
+  - 📷: Generates a cat gif.
+  
+  - ⏭️: Generates another cat image.
+  
+```
 
-To invite the bot to your discord server, click this [link](https://discord.com/api/oauth2/authorize?client_id=883771045042069524&permissions=120259210240&scope=bot)
+# How can I use this bot in my server?
+
+To use the bot, you have to invite it to your server. To invite the bot to your discord server, click this [link](https://discord.com/api/oauth2/authorize?client_id=883771045042069524&permissions=120259210240&scope=bot)
 
 # Bot Examples
 
-![](Images/instructions.png)
+![](Images/Instructions01.png)
 
 ![](Images/category.png)
 
 ![](Images/cat.png)
 
-# Future Updates
+![](Images/reactions.png)
 
- - Add reactions below the images/gifs to generate new cat images. This will improve the speed and usability of the bot as people will not have write again the command.
+
+# VERSION 1.1
+
+ - Bot working with input commands.
+ 
+ - Categories to search for certain cat types.
+ 
+ - Added Gifs.
+
+ - Added the reaction functionality.
 
 # Disclaimer
 
