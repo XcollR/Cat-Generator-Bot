@@ -3,7 +3,7 @@ import asyncio
 import random
 
 #WELCOME TEXT USED WHEN ;i is invoked.
-welcome_text = "Hi, welcome to the Miau Bot! The purpose of this bot is to cheer you up or just to have some fun while looking at the different cats.\n\nTo use this bot:\n - ;i To show the instructions.\n - ;cat To show a picture of a cat. \n - ;gif To show a cat gif. \n - ;category: To select a specific cat category.\n\nBelow the images, you'll find some reactions:\n - 🐈: Gives some cat texts :)\n - 📌: Pins the image to the channel where you are using the bot.\n - ⏭️: Generates another cat image.\n\nEnjoy!!"
+welcome_text = "Hi, welcome to the Miau Bot! The purpose of this bot is to cheer you up or just to have some fun while looking at the different cats.\n\n**To use this bot:**\n - ;i To show the instructions.\n - ;cat To show a picture of a cat. \n - ;gif To show a cat gif. \n - ;category To select a specific cat category.\n\nBelow the images, you'll find some reactions:\n - 🐈: Gives some cat texts :)\n - 📌: Pins the image to the channel where you are using the bot.\n - 📷: Generates a cat gif.\n - ⏭️: Generates another cat image.\n\nEnjoy!!"
 
 # TYPES OF MIAU
 miau_type = ["miaaau", "miauu", "miaumiauu", "miaau", "meowwww", "miiauuu",
