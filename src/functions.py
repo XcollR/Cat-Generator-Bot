@@ -3,7 +3,7 @@ import asyncio
 import random
 
 #WELCOME TEXT USED WHEN ;i is invoked.
-welcome_text = "Hi, welcome to the Miau Bot! The purpose of this bot is to cheer you up or just to have some fun while looking at the different cats.\nTo use this bot:\n - ;i To show the instructions.\n - ;cat To show a picture of a cat. \n - ;gif To show a cat gif. \n - ;category: To select a specific cat category.\nEnjoy!"
+welcome_text = "Hi, welcome to the Miau Bot! The purpose of this bot is to cheer you up or just to have some fun while looking at the different cats.\n\nTo use this bot:\n - ;i To show the instructions.\n - ;cat To show a picture of a cat. \n - ;gif To show a cat gif. \n - ;category: To select a specific cat category.\n\nBelow the images, you'll find some reactions:\n - 🐈: Gives some cat texts :)\n - 📌: Pins the image to the channel where you are using the bot.\n - ⏭️: Generates another cat image.\n\nEnjoy!!"
 
 # TYPES OF MIAU
 miau_type = ["miaaau", "miauu", "miaumiauu", "miaau", "meowwww", "miiauuu",
@@ -16,7 +16,7 @@ miau_type = ["miaaau", "miauu", "miaumiauu", "miaau", "meowwww", "miiauuu",
 
 
 #### GET A CATEGORY CAT FUNCTION ####
-async def cat_category(message):
+async def cat_category(message,client):
   text = ""
   await message.channel.send("**Select one of these categories and write it down:**")
   categories = requests.get("https://api.thecatapi.com/v1/categories")
@@ -44,7 +44,9 @@ async def cat_category(message):
       msg = await message.channel.send(image_json[0]["url"])
       await msg.add_reaction("🐈" )
       await msg.add_reaction("📌")
+      await msg.add_reaction("📷")
       await msg.add_reaction("⏭️")
+
     else:
       await message.channel.send("Sorry the category you choose doesn't exist :(")
      
@@ -61,6 +63,7 @@ async def get_cat(message):
   msg = await message.channel.send(image_json[0]["url"])
   await msg.add_reaction("🐈" )
   await msg.add_reaction("📌")
+  await msg.add_reaction("📷")
   await msg.add_reaction("⏭️")
 
 
@@ -72,6 +75,7 @@ async def get_cat_gif(message):
   msg = await message.channel.send(image_json[0]["url"])
   await msg.add_reaction("🐈" )
   await msg.add_reaction("📌")
+  await msg.add_reaction("📷")
   await msg.add_reaction("⏭️")
 
 
@@ -91,13 +95,16 @@ async def manage_reactions(reaction, user, client):
     if reaction.emoji == "🐈" and reaction.count > 1:
       text = get_miau_text()
       await channel.send(text)
+    if reaction.emoji == "📷" and reaction.count > 1:
+      await get_cat_gif(message)
+
 
 
 #### GET A RANDOM MEOW TYPE ####
 
 def get_miau_text():
   text = ""
-  for x in range(3):
+  for x in range(random.randint(1,5)):
     text += random.choice(miau_type) + " "
   return text
 
