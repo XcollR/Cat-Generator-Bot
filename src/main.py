@@ -16,7 +16,7 @@ async def on_ready():
 async def on_message(message):
   message.content = message.content.lower()
   if message.content.startswith(";category"):
-    await cat_category(message)
+    await cat_category(message,client)
 
   elif message.content.startswith(";i"):
     await message.channel.send(welcome_text)
